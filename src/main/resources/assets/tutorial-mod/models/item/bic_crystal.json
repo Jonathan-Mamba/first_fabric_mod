@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "tutorial-mod:item/bic_crystal"
+    "layer0": "tutorialmod:item/bic_crystal"
   }
 }

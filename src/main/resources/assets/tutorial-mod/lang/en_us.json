@@ -1,5 +1,6 @@
 {
-  "item.tutorial-mod.stylo": "Bic Pas Crystal",
-  "item.tutorial-mod.bic_crystal": "Bic Crystal",
-  "itemgroup.tutorialmod": "Le mod du Turfu "
+  "item.tutorialmod.stylo": "Bic Pas Crystal",
+  "item.tutorialmod.bic_crystal": "Bic Crystal",
+  "itemgroup.tutorialmod": "Le mod du Turfu",
+  "block.tutorial-mod.stylo_block": "Bloc de Stylos"
 }
