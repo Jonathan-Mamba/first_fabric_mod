@@ -1,10 +1,10 @@
 package name.modid.item;
 
+import name.modid.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import name.modid.TutorialMod;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -18,7 +18,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.BIC_CTYSTAL)).entries((displayContext, entries) -> {
                         entries.add(ModItems.BIC_CTYSTAL);
                         entries.add(ModItems.STYLO_NWAR);
-                        // entries.add(ModBlocks.STYLO_BLOCK);
+                        entries.add(ModBlocks.STYLO_BLOCK);
                     }).build());
 
     public static void registerItemsGroup() {

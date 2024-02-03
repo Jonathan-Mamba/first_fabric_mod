@@ -2,6 +2,7 @@ package name.modid;
 
 import name.modid.block.ModBlocks;
 import name.modid.item.ModItemGroups;
+import name.modid.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.item.ItemGroup;
@@ -16,6 +17,7 @@ public class TutorialMod implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
 		ModItemGroups.registerItemsGroup();
-		boolean var = ModItemGroups.MOD_ITEMS_GROUP.getRow().toString() == null;
+		ModBlocks.registerModBlocks();
+		ModItems.registerModItems();
 	}
 }
