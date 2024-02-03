@@ -1,6 +1,6 @@
 package name.modid;
 
-import name.modid.item.ModItems;
+import name.modid.item.ModItemGroups;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,11 +12,7 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-		for (int i = 0; i < 20; i++) {
-			LOGGER.info("Hello Fabric world!");
-		}
-		ModItems.registerModItems();
-
+		LOGGER.info("Hello Fabric world!");
+		ModItemGroups.registerItemsGroup();
 	}
 }
