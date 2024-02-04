@@ -12,7 +12,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-    public static final Block STYLO_BLOCK = registerBlock("stylo_block",
+    public static final Block STYLO_BLOCK = registerBlock("bic_crystal_block",
             new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)));
 
 

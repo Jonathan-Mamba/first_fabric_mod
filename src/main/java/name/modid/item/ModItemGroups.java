@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     public static final ItemGroup MOD_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(TutorialMod.MOD_ID, "mod"),
+            new Identifier(TutorialMod.MOD_ID, "mod_group"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.tutorialmod"))
                     .icon(() -> new ItemStack(ModItems.BIC_CTYSTAL)).entries((displayContext, entries) -> {
                         entries.add(ModItems.BIC_CTYSTAL);
