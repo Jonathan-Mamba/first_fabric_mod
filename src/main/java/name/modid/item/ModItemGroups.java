@@ -19,6 +19,7 @@ public class ModItemGroups {
                         entries.add(ModItems.BIC_CTYSTAL);
                         entries.add(ModItems.STYLO_NWAR);
                         entries.add(ModBlocks.STYLO_BLOCK);
+                        entries.add(ModItems.QUATRE_COULEURS_BASE);
                     }).build());
 
     public static void registerItemsGroup() {
