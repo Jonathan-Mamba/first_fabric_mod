@@ -3,6 +3,9 @@
   "item.tutorialmod.bic_crystal": "Bic Crystal",
   "item.tutorialmod.quatre_couleurs_base": "Quatre Couleurs",
   "item.tutorialmod.bic_crystal_rouge": "Stylo Rouge",
+  "item.tutorialmod.bic_crystal_bleu": "Stylo Bleu",
+  "item.tutorialmod.bic_crystal_noir": "Stylo Noir",
+  "item.tutorialmod.bic_crystal_vert": "Stylo Vert",
   "itemgroup.tutorialmod": "Stylos sans eau",
   "block.tutorialmod.bic_crystal_block": "Bloc de Stylos"
 }

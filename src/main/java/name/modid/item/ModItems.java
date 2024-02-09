@@ -13,12 +13,11 @@ public class ModItems {
     public static final Item BIC_CTYSTAL = registerItem("bic_crystal");
     public static final Item QUATRE_COULEURS_BASE = registerItem("quatre_couleurs_base");
     public static final Item STYLO_ROUGE = registerItem("bic_crystal_rouge");
+    public static final Item STYLO_VERT = registerItem("bic_crystal_vert");
+    public static final Item STYLO_NOIR = registerItem("bic_crystal_noir");
+    public static final Item STYLO_BLEU = registerItem("bic_crystal_bleu");
 
-    private static void addItemsToIngredientsItemGroup(FabricItemGroupEntries entries) {
-        entries.add(STYLO_NWAR);
-        entries.add(BIC_CTYSTAL);
-        entries.add(QUATRE_COULEURS_BASE);
-    }
+
 
 
     public static Item registerItem(String name) {
