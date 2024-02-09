@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.STYLO_NWAR);
                         entries.add(ModBlocks.STYLO_BLOCK);
                         entries.add(ModItems.QUATRE_COULEURS_BASE);
+                        entries.add(ModItems.STYLO_ROUGE);
                     }).build());
 
     public static void registerItemsGroup() {

@@ -12,7 +12,7 @@ public class ModItems {
     public static final Item STYLO_NWAR = registerItem("stylo");
     public static final Item BIC_CTYSTAL = registerItem("bic_crystal");
     public static final Item QUATRE_COULEURS_BASE = registerItem("quatre_couleurs_base");
-    public static final Item STYLO_ROUGE = registerItem("stylo_rouge");
+    public static final Item STYLO_ROUGE = registerItem("bic_crystal_rouge");
 
     private static void addItemsToIngredientsItemGroup(FabricItemGroupEntries entries) {
         entries.add(STYLO_NWAR);
