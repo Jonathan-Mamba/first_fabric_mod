@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#!"
+  ],
+  "key": {
+    "#":{"tag": "tutorialmod:bics_crystal"},
+    "!": {"item": "minecraft:black_dye"}
+},
+  "result": {
+    "item": "tutorialmod:bic_crystal_noir"
+  }
+}

@@ -24,9 +24,11 @@ public class ModItemGroups {
                         entries.add(ModItems.STYLO_BLEU);
                         entries.add(ModItems.STYLO_NOIR);
                         entries.add(ModItems.STYLO_VERT);
+                        entries.add(ModItems.BIC_CRYSTAL_PACK);
                     }).build());
 
     public static void registerItemsGroup() {
         TutorialMod.LOGGER.info("Registering item groups");
     }
 }
+

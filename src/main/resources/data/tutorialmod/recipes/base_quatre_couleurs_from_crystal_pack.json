@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "building",
+  "category": "misc",
   "ingredients": [
     {
-      "item": "tutorialmod:bic_crystal"
+      "item": "tutorialmod:bic_crystal_pack"
     }
   ],
   "result":{

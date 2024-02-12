@@ -7,5 +7,6 @@
   "item.tutorialmod.bic_crystal_noir": "Stylo Noir",
   "item.tutorialmod.bic_crystal_vert": "Stylo Vert",
   "itemgroup.tutorialmod": "Stylos sans eau",
-  "block.tutorialmod.bic_crystal_block": "Bloc de Stylos"
+  "block.tutorialmod.bic_crystal_block": "Bloc de Stylos",
+  "item.tutorialmod.bic_crystal_pack": "Pack de Stylos"
 }

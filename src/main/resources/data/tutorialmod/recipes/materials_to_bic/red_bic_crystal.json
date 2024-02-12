@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#-#",
+    "#!#",
+    "#$#"
+  ],
+  "key": {
+    "#": {"item": "minecraft:glass"},
+    "$": {"item": "minecraft:gold_nugget"},
+    "!": {"item": "minecraft:ink_sac"},
+    "-": {"item": "minecraft:red_dye"}
+  },
+  "result": {
+    "item": "tutorialmod:bic_crystal_rouge"
+  }
+}

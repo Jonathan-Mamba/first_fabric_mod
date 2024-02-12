@@ -2,7 +2,6 @@ package name.modid.item;
 
 import name.modid.TutorialMod;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -16,6 +15,7 @@ public class ModItems {
     public static final Item STYLO_VERT = registerItem("bic_crystal_vert");
     public static final Item STYLO_NOIR = registerItem("bic_crystal_noir");
     public static final Item STYLO_BLEU = registerItem("bic_crystal_bleu");
+    public static final Item BIC_CRYSTAL_PACK = registerItem("bic_crystal_pack");
 
 
 
