@@ -7,7 +7,7 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
 public class ModTags {
-    public static final TagKey<Item> SINGLE_COLOR_BIC_CRYSTAL = Items.createTag("bics_crystal");
+    public static final TagKey<Item> BICS_CRYSTAL = Items.createTag("bics_crystal");
     public static class Blocks {
 
     }
