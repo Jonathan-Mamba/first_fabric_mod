@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "ingredients": ["#tutorialmod:bics_crystal"],
+  "ingredients": [{"tag": "tutorialmod:bics_crystal"}],
   "result": {"item": "tutorialmod:bic_crystal"}
 }
