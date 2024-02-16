@@ -1,8 +1,10 @@
 package name.modid.datagen;
 
+import name.modid.block.ModBlocks;
 import name.modid.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.Block;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
@@ -15,6 +17,13 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        Block[] cubeAllBlocks = {
+                ModBlocks.STYLO_BLOCK
+        };
+
+        for (Block block : cubeAllBlocks) {
+            blockStateModelGenerator.registerSimpleCubeAll(block);
+        }
 
     }
 
@@ -31,8 +40,8 @@ public class ModModelProvider extends FabricModelProvider {
                 ModItems.QUATRE_COULEURS_BASE
         };
 
-        for (int i = 0; i < items.length; i++) {
-            itemModelGenerator.register(items[i], Models.GENERATED);
+        for (Item item : items) {
+            itemModelGenerator.register(item, Models.GENERATED);
         }
     }
 }

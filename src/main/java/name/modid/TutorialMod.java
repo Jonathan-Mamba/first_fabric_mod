@@ -3,9 +3,11 @@ package name.modid;
 import name.modid.block.ModBlocks;
 import name.modid.item.ModItemGroups;
 import name.modid.item.ModItems;
+import name.modid.util.ModTags;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.item.ItemGroup;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
