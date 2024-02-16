@@ -15,20 +15,18 @@ public class ModItemGroups {
     public static final ItemGroup MOD_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(TutorialMod.MOD_ID, "mod_group"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.tutorialmod"))
-                    .icon(() -> new ItemStack(ModItems.BIC_CTYSTAL)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.BIC_CTYSTAL);
+                    .icon(() -> new ItemStack(ModItems.BIC_CRYSTAL_PACK)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.BIC_CRYSTAL);
                         entries.add(ModItems.STYLO_NWAR);
                         entries.add(ModBlocks.STYLO_BLOCK);
                         entries.add(ModItems.QUATRE_COULEURS_BASE);
-                        entries.add(ModItems.STYLO_ROUGE);
-                        entries.add(ModItems.STYLO_BLEU);
-                        entries.add(ModItems.STYLO_NOIR);
-                        entries.add(ModItems.STYLO_VERT);
+                        entries.add(ModItems.BIC_CRYSTAL_ROUGE);
+                        entries.add(ModItems.BIC_CRYSTAL_BLEU);
+                        entries.add(ModItems.BIC_CRYSTAL_NOIR);
+                        entries.add(ModItems.BIC_CRYSTAL_VERT);
                         entries.add(ModItems.BIC_CRYSTAL_PACK);
                     }).build());
 
-    public static void registerItemsGroup() {
-        TutorialMod.LOGGER.info("Registering item groups");
-    }
+    public static void registerItemsGroup() { TutorialMod.LOGGER.info("Registering item groups"); }
 }
 

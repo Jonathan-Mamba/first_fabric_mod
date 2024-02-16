@@ -1,4 +1,17 @@
 package name.modid.datagen;
 
-public class ModLootTableProvider {
+
+import name.modid.block.ModBlocks;
+import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+
+public class ModLootTableProvider extends FabricBlockLootTableProvider {
+    protected ModLootTableProvider(FabricDataOutput dataOutput) {
+        super(dataOutput);
+    }
+
+    @Override
+    public void generate() {
+        addDrop(ModBlocks.STYLO_BLOCK);
+    }
 }
