@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "!": {
+      "item": "minecraft:ink_sac"
+    },
+    "#": {
+      "item": "minecraft:glass_pane"
+    },
+    "*": {
+      "item": "minecraft:red_dye"
+    },
+    "v": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+  "pattern": [
+    "#*#",
+    "#!#",
+    "#v#"
+  ],
+  "result": {
+    "item": "tutorialmod:bic_crystal_rouge"
+  }
+}

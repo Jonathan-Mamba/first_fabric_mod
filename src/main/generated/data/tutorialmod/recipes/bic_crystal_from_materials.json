@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "!": {
+      "item": "minecraft:ink_sac"
+    },
+    "#": {
+      "item": "minecraft:glass_pane"
+    },
+    "v": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+  "pattern": [
+    "# #",
+    "#!#",
+    "#v#"
+  ],
+  "result": {
+    "item": "tutorialmod:bic_crystal"
+  }
+}
