@@ -1,0 +1,11 @@
+// 1.20.4	2024-02-18T20:12:06.7099015	Tutorial Mod/Model Definitions
+3f33e3b190f07831a17e8f3f65fb615a43ae5fd5 assets\tutorialmod\models\block\bic_crystal_block.json
+f3d87f12521cbf6d45ebcb940a653d3f291c772a assets\tutorialmod\models\item\stylo.json
+073254a517ad0aa3de9943984662d823b90e66ba assets\tutorialmod\models\item\bic_crystal_pack.json
+ba0aa00559a876467f17b76b981807924cc0d642 assets\tutorialmod\models\item\bic_crystal_vert.json
+bcad5d10770a02ace3b7bb531ad05bade93aa725 assets\tutorialmod\models\item\bic_crystal.json
+b94b9d20dc64e80a10481b02863d3eb118c6ee95 assets\tutorialmod\blockstates\bic_crystal_block.json
+9734a278404707853686fd15afed6d422b4890ed assets\tutorialmod\models\item\bic_crystal_rouge.json
+5fc44bccedc40a1f725f77a1b690753926526a64 assets\tutorialmod\models\item\bic_crystal_bleu.json
+e54f0ae08e871fbb397951d5f6a88864ebbf8ad9 assets\tutorialmod\models\item\quatre_couleurs_base.json
+fe8765c3a63e4821a2afc46449879da386c2d6a2 assets\tutorialmod\models\item\bic_crystal_noir.json

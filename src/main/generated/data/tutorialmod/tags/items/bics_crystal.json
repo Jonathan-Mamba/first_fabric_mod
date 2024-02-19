@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:bic_crystal_bleu",
+    "tutorialmod:bic_crystal",
+    "tutorialmod:bic_crystal_noir",
+    "tutorialmod:bic_crystal_rouge",
+    "tutorialmod:bic_crystal_vert"
+  ]
+}

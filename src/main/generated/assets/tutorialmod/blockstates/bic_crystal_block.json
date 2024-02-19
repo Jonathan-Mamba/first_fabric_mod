@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tutorialmod:block/bic_crystal_block"
+    }
+  }
+}
