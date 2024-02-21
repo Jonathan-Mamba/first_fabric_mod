@@ -30,7 +30,6 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         Item[] items = {
-                ModItems.STYLO_NWAR,
                 ModItems.BIC_CRYSTAL,
                 ModItems.BIC_CRYSTAL_BLEU,
                 ModItems.BIC_CRYSTAL_NOIR,
@@ -39,7 +38,6 @@ public class ModModelProvider extends FabricModelProvider {
                 ModItems.BIC_CRYSTAL_PACK,
                 ModItems.QUATRE_COULEURS_BASE
         };
-
         for (Item item : items) {
             itemModelGenerator.register(item, Models.GENERATED);
         }

@@ -8,7 +8,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item STYLO_NWAR = registerItem("stylo");
     public static final Item BIC_CRYSTAL = registerItem("bic_crystal");
     public static final Item QUATRE_COULEURS_BASE = registerItem("quatre_couleurs_base");
     public static final Item BIC_CRYSTAL_ROUGE = registerItem("bic_crystal_rouge");

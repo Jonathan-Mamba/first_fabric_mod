@@ -17,7 +17,6 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.tutorialmod"))
                     .icon(() -> new ItemStack(ModItems.BIC_CRYSTAL_PACK)).entries((displayContext, entries) -> {
                         entries.add(ModItems.BIC_CRYSTAL);
-                        entries.add(ModItems.STYLO_NWAR);
                         entries.add(ModBlocks.STYLO_BLOCK);
                         entries.add(ModItems.QUATRE_COULEURS_BASE);
                         entries.add(ModItems.BIC_CRYSTAL_ROUGE);
