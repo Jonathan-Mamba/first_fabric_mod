@@ -2,6 +2,7 @@ package name.modid.item;
 
 import name.modid.TutorialMod;
 import name.modid.item.custom.BicCrystalProjectileItem;
+import name.modid.item.custom.StyloArrowItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -18,6 +19,7 @@ public class ModItems {
     public static final Item BIC_CRYSTAL_BLEU = registerItem("bic_crystal_bleu");
     public static final Item BIC_CRYSTAL_PACK = registerItem("bic_crystal_pack");
     public static final Item TEST_PROJECTILE = registerItem("test_projectile", new BicCrystalProjectileItem(settings));
+    public static final Item TEST_FLECHE_STYLO = registerItem("test_fleche_stylo", new StyloArrowItem(settings));
 
 
 
