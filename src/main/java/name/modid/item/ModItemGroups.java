@@ -24,6 +24,7 @@ public class ModItemGroups {
                         entries.add(ModItems.BIC_CRYSTAL_NOIR);
                         entries.add(ModItems.BIC_CRYSTAL_VERT);
                         entries.add(ModItems.BIC_CRYSTAL_PACK);
+                        entries.add(ModItems.TEST_PROJECTILE);
                     }).build());
 
     public static void registerItemsGroup() { TutorialMod.LOGGER.info("Registering item groups"); }

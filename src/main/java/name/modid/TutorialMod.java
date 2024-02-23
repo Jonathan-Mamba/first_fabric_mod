@@ -24,4 +24,5 @@ public class TutorialMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroups.registerItemsGroup();
 	}
+	public static void info(String string) {LOGGER.info(string);}
 }
