@@ -19,7 +19,7 @@ public class QuatreCouleursRecipeProvider extends CustomRecipeProvider {
     }
     private ShapedRecipeJsonBuilder generateRecipe() {
         HashMap<Character, ItemConvertible> map = new HashMap<>(2);
-        map.put('#', ModItems.QUATRE_COULEURS_BASE);
+        map.put('#', ModItems.BIC_CRYSTAL_PACK);
         map.put('!', Items.IRON_NUGGET);
         return recipeProvider.generateSimpleShapedRecipe(RecipeCategory.MISC, ModItems.QUATRE_COULEURS_BASE, map, new String[]{"!#!"});
     }

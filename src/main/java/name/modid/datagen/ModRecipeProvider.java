@@ -17,9 +17,7 @@ import java.util.Map;
 
 // C'est vrmt chaint les overloads
 public class ModRecipeProvider extends FabricRecipeProvider {
-    public ModRecipeProvider(FabricDataOutput output) {
-        super(output);
-    }
+    public ModRecipeProvider(FabricDataOutput output) { super(output); }
 
     @Override
     public void generate(RecipeExporter exporter) {
