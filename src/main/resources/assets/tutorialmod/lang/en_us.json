@@ -1,5 +1,4 @@
 {
-  "item.tutorialmod.stylo": "Bic Pas Crystal",
   "item.tutorialmod.bic_crystal": "Stylo",
   "item.tutorialmod.quatre_couleurs_base": "Quatre Couleurs",
   "item.tutorialmod.bic_crystal_rouge": "Stylo Rouge",
@@ -9,5 +8,9 @@
   "itemgroup.tutorialmod": "Stylos sans eau",
   "block.tutorialmod.bic_crystal_block": "Bloc de Stylos",
   "item.tutorialmod.bic_crystal_pack": "Pack de Stylos",
-  "item.tutorialmod.test_projectile": "Projectile"
+  "item.tutorialmod.test_projectile": "Projectile",
+  "item.tutorialmod.inked_arrow": "Inked Arrow",
+  "entity.tutorialmod.inked_arrow": "Inked Arrow",
+  "entity.tutorialmod.test_projectile": "Projectile",
+  "death.attack.bic_crystal_entity": "PTDR le boug il est mort à cause de stylos 🤣🤣"
 }

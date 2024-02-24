@@ -38,7 +38,7 @@ public class ModModelProvider extends FabricModelProvider {
                 ModItems.BIC_CRYSTAL_PACK,
                 ModItems.QUATRE_COULEURS_BASE,
                 ModItems.TEST_PROJECTILE,
-                ModItems.TEST_FLECHE_STYLO
+                ModItems.INKED_ARROW
         };
         for (Item item : items) {
             itemModelGenerator.register(item, Models.GENERATED);

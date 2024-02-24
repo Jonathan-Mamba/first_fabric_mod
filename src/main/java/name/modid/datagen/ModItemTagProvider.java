@@ -5,8 +5,7 @@ import name.modid.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.registry.tag.TagBuilder;
-import org.jetbrains.annotations.Nullable;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -25,5 +24,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.BIC_CRYSTAL_NOIR)
                 .add(ModItems.BIC_CRYSTAL_ROUGE)
                 .add(ModItems.BIC_CRYSTAL_VERT);
+
+        getOrCreateTagBuilder(ItemTags.ARROWS).add(ModItems.INKED_ARROW);
+
     }
 }
