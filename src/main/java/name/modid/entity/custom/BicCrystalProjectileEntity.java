@@ -16,9 +16,11 @@ import net.minecraft.item.Item;
 import net.minecraft.network.listener.ClientPlayPacketListener;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.s2c.play.EntitySpawnS2CPacket;
-import net.minecraft.registry.DynamicRegistryManager;
+import net.minecraft.registry.*;
 import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.resource.Resource;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.world.World;
@@ -65,9 +67,13 @@ public class BicCrystalProjectileEntity extends ThrownItemEntity {
         playGlassSound();
         // si c'est un truc vivant et pas un enderman
         if (entity instanceof LivingEntity && entity.getType() != EntityType.ENDERMAN) {
+            DamageSources damageSources = new DamageSources(MinecraftClient.getInstance().world.getRegistryManager());
             entity.damage(                                        // v key pour message de mort // v jsp
-                    new DamageSource(RegistryEntry.of(new DamageType("bic_crystal_entity", 10.0f))),
+                    //damageSources.genericKill(),
+                    damageSources.create(RegistryKey.of(RegistryKeys.DAMAGE_TYPE, new Identifier(TutorialMod.MOD_ID, "bic_crystal_entity"))),
+                    //new DamageSource(RegistryEntry.of(new DamageType("bic_crystal_entity", 10.0f))),
                     DAMAGE);
+
         }
     }
 }

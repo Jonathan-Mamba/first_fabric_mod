@@ -6,11 +6,9 @@ import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.util.Identifier;
 
 public class InkedArrowRenderer extends ArrowEntityRenderer {
-    public InkedArrowRenderer(EntityRendererFactory.Context context) {
-        super(context);
-    }
+    public InkedArrowRenderer(EntityRendererFactory.Context context) { super(context); }
     @Override
     public Identifier getTexture(ArrowEntity arrowEntity) {
-        return new Identifier("textures/entity/projectiles/arrow.png");
+        return new Identifier("textures/entity/projectiles/inked_arrow.png");
     }
 }

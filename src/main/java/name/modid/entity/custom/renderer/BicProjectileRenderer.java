@@ -38,7 +38,7 @@ public class BicProjectileRenderer<T extends Entity & FlyingItemEntity> extends 
 
     @Override
     public void render(T entity, float yaw, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light) {
-        if (((Entity)entity).age < 2 && this.dispatcher.camera.getFocusedEntity().squaredDistanceTo((Entity)entity) < 12.25) {
+        if (entity.age < 2 && this.dispatcher.camera.getFocusedEntity().squaredDistanceTo(entity) < 12.25) {
             return;
         }
         matrices.push();
@@ -55,7 +55,7 @@ public class BicProjectileRenderer<T extends Entity & FlyingItemEntity> extends 
         if (!this.hasLabel(entity)) {
             return;
         }
-        this.renderLabelIfPresent(entity, ((Entity)entity).getDisplayName(), matrices, vertexConsumers, light);
+        this.renderLabelIfPresent(entity, entity.getDisplayName(), matrices, vertexConsumers, light);
     }
     @Override
     public Identifier getTexture(Entity entity) {
