@@ -20,11 +20,9 @@ public class ModModelProvider extends FabricModelProvider {
         Block[] cubeAllBlocks = {
                 ModBlocks.STYLO_BLOCK
         };
-
         for (Block block : cubeAllBlocks) {
             blockStateModelGenerator.registerSimpleCubeAll(block);
         }
-
     }
 
     @Override
@@ -37,7 +35,6 @@ public class ModModelProvider extends FabricModelProvider {
                 ModItems.BIC_CRYSTAL_VERT,
                 ModItems.BIC_CRYSTAL_PACK,
                 ModItems.QUATRE_COULEURS_BASE,
-                ModItems.TEST_PROJECTILE,
                 ModItems.INKED_ARROW
         };
         for (Item item : items) {

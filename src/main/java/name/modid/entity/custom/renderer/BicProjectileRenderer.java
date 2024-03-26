@@ -57,8 +57,8 @@ public class BicProjectileRenderer<T extends Entity & FlyingItemEntity> extends 
         }
         this.renderLabelIfPresent(entity, entity.getDisplayName(), matrices, vertexConsumers, light);
     }
-    @Override
-    public Identifier getTexture(Entity entity) {
-        return new Identifier("textures/entity/projectiles/bic_projectile.png");
-    }
+//    @Override
+//    public Identifier getTexture(Entity entity) {
+//        return new Identifier("textures/entity/projectiles/bic_projectile.png");
+//    }
 }
