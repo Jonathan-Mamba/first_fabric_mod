@@ -25,13 +25,13 @@ public class MiscRecipeProvider extends CustomRecipeProvider {
     }
 
     private ShapedRecipeJsonBuilder getInkedArrowRecipe() {
-        Map<Character, ItemConvertible> map = new HashMap<>();
-        map.put('!', Items.ARROW);
-        map.put('#', Items.INK_SAC);
         return recipeProvider.generateSimpleShapedRecipe(
                 RecipeCategory.COMBAT,
                 ModItems.INKED_ARROW,
-                map,
+                new HashMap<>() {{
+                    put('!', Items.ARROW);
+                    put('#', Items.INK_SAC);
+                }},
                 new String[]{"###",
                              "#!#",
                              "###"}

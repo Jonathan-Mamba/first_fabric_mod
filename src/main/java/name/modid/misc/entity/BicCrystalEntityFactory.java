@@ -6,8 +6,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.world.World;
 
 public class BicCrystalEntityFactory {
-
-
     public static BicCrystalEntity getEntity(PlayerEntity user, World world, String classKey) {
         return switch (classKey) {
             case "blue" -> {
