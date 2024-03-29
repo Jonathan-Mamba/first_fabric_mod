@@ -25,7 +25,4 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         new QuatreCouleursRecipeProvider(output).generate(exporter);
         new MiscRecipeProvider(output).generate(exporter);
     }
-
-
-
 }
