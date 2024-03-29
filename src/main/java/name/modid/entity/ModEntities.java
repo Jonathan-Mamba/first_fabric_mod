@@ -37,4 +37,24 @@ public class ModEntities {
                 FabricEntityTypeBuilder.create(SpawnGroup.MISC, constructor)
                         .dimensions(EntityDimensions.fixed(.25f, .25f)).build());
     }
+    private static <T extends Entity> EntityType<T> registerEntity(EntityType.EntityFactory<T> constructor, String path, float width, float height) {
+        return Registry.register(Registries.ENTITY_TYPE,
+                new Identifier(TutorialMod.MOD_ID, path),
+                FabricEntityTypeBuilder.create(SpawnGroup.MISC, constructor)
+                        .dimensions(EntityDimensions.fixed(width, height)).build());
+    }
+
+    private static <T extends Entity> EntityType<T> registerEntity(EntityType.EntityFactory<T> constructor, String path, SpawnGroup spawnGroup) {
+        return Registry.register(Registries.ENTITY_TYPE,
+                new Identifier(TutorialMod.MOD_ID, path),
+                FabricEntityTypeBuilder.create(spawnGroup, constructor)
+                        .dimensions(EntityDimensions.fixed(.25f, .25f)).build());
+    }
+    private static <T extends Entity> EntityType<T> registerEntity(EntityType.EntityFactory<T> constructor, String path, SpawnGroup spawnGroup, float width, float height) {
+        return Registry.register(Registries.ENTITY_TYPE,
+                new Identifier(TutorialMod.MOD_ID, path),
+                FabricEntityTypeBuilder.create(spawnGroup, constructor)
+                        .dimensions(EntityDimensions.fixed(width, height)).build());
+    }
+
 }

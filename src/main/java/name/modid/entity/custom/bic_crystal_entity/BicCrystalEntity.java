@@ -3,11 +3,11 @@ package name.modid.entity.custom.bic_crystal_entity;
 import name.modid.entity.ModEntities;
 import name.modid.item.ModItems;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.sound.PositionedSoundInstance;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSources;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
 import net.minecraft.item.Item;
 import net.minecraft.network.listener.ClientPlayPacketListener;
@@ -24,9 +24,14 @@ public class BicCrystalEntity extends ThrownItemEntity {
     public BicCrystalEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
         super(entityType, world);
     }
-
     public BicCrystalEntity(LivingEntity livingEntity, World world) {
         super(ModEntities.BIC_CRYSTAL_ENTITY, livingEntity, world);
+    }
+    protected <T extends BicCrystalEntity> BicCrystalEntity(EntityType<T> entityType, LivingEntity livingEntity, World world) {
+        super(entityType, livingEntity, world);
+    }
+    public BicCrystalEntity(EntityType<? extends ThrownItemEntity> entityType, double d, double e, double f, World world) {
+        super(entityType, d, e, f, world);
     }
 
     @Override
@@ -40,10 +45,10 @@ public class BicCrystalEntity extends ThrownItemEntity {
     }
 
     protected void playGlassSound() {
-        MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(SoundEvents.BLOCK_GLASS_BREAK, 1.0f));
+        this.playSound(SoundEvents.BLOCK_GLASS_BREAK, 1f, 1f);
     }
-    protected void playGlassSound(float pitch) {
-        MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(SoundEvents.BLOCK_GLASS_BREAK, pitch));
+    protected void playGlassSound(float volume, float pitch) {
+        this.playSound(SoundEvents.BLOCK_GLASS_BREAK, volume, pitch);
     }
     @Override
     protected void onBlockHit(BlockHitResult blockHitResult) {
@@ -59,7 +64,10 @@ public class BicCrystalEntity extends ThrownItemEntity {
         super.onEntityHit(entityHitResult);
         playGlassSound();
         // si c'est un truc vivant et pas un enderman
-        if (entity instanceof LivingEntity && entity.getType() != EntityType.ENDERMAN) {
+        if (entity.getType() == EntityType.PLAYER && ((PlayerEntity) entity).isCreative()) {
+                this.kill();
+
+        } else if (entity instanceof LivingEntity && entity.getType() != EntityType.ENDERMAN) {
             DamageSources damageSources = new DamageSources(MinecraftClient.getInstance().world.getRegistryManager());
             entity.damage(damageSources.genericKill(), DAMAGE);
         }

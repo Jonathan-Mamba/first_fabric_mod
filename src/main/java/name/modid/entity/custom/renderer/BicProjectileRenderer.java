@@ -1,10 +1,7 @@
 package name.modid.entity.custom.renderer;
 
-import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.VertexConsumerProvider;
-import net.minecraft.client.render.entity.ArrowEntityRenderer;
-import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.client.render.item.ItemRenderer;
@@ -12,8 +9,6 @@ import net.minecraft.client.render.model.json.ModelTransformationMode;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.FlyingItemEntity;
-import net.minecraft.entity.projectile.ArrowEntity;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.math.RotationAxis;
 
 public class BicProjectileRenderer<T extends Entity & FlyingItemEntity> extends FlyingItemEntityRenderer<T> {
@@ -45,7 +40,7 @@ public class BicProjectileRenderer<T extends Entity & FlyingItemEntity> extends 
         matrices.scale(this.scale, this.scale, this.scale);
         matrices.multiply(this.dispatcher.getRotation());
         matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(180.0f));
-        this.itemRenderer.renderItem(entity.getStack(), ModelTransformationMode.FIRST_PERSON_RIGHT_HAND, light, OverlayTexture.DEFAULT_UV, matrices, vertexConsumers, entity.getWorld(), entity.getId());
+        this.itemRenderer.renderItem(entity.getStack(), ModelTransformationMode.GROUND, light, OverlayTexture.DEFAULT_UV, matrices, vertexConsumers, entity.getWorld(), entity.getId());
         matrices.pop();
         renderSuperSuper(entity, yaw, tickDelta, matrices, vertexConsumers, light);
 
@@ -57,8 +52,4 @@ public class BicProjectileRenderer<T extends Entity & FlyingItemEntity> extends 
         }
         this.renderLabelIfPresent(entity, entity.getDisplayName(), matrices, vertexConsumers, light);
     }
-//    @Override
-//    public Identifier getTexture(Entity entity) {
-//        return new Identifier("textures/entity/projectiles/bic_projectile.png");
-//    }
 }

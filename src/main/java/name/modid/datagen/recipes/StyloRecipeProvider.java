@@ -1,6 +1,5 @@
 package name.modid.datagen.recipes;
 
-import name.modid.datagen.ModRecipeProvider;
 import name.modid.item.ModItems;
 import name.modid.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -13,8 +12,8 @@ import net.minecraft.recipe.book.RecipeCategory;
 
 public class StyloRecipeProvider extends CustomRecipeProvider {
     //public ModRecipeProvider recipeProvider;
-    public StyloRecipeProvider(FabricDataOutput output, ModRecipeProvider provider) {
-        super(output, provider);
+    public StyloRecipeProvider(FabricDataOutput output) {
+        super(output);
         //recipeProvider = provider;
     }
 
@@ -42,14 +41,14 @@ public class StyloRecipeProvider extends CustomRecipeProvider {
     }
 
     private ShapelessRecipeJsonBuilder generateStyloRecipeFromOthers(Item stylo, Item dye) {
-        return recipeProvider.generateSimpleCriterions(ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, stylo)
+        return generateSimpleCriterions(ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, stylo)
                         .input(ModTags.BICS_CRYSTAL)
                         .input(dye),
                 new Item[]{stylo, dye});
     }
 
     private ShapelessRecipeJsonBuilder generateStyloRecipeFromOthers(Item stylo) {
-        return recipeProvider.generateSimpleCriterions(ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, stylo)
+        return generateSimpleCriterions(ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, stylo)
                 .input(ModTags.BICS_CRYSTAL), new Item[]{stylo});
     }
 
@@ -67,7 +66,7 @@ public class StyloRecipeProvider extends CustomRecipeProvider {
                 .input('*', dye)
                 .input('v', mine);
 
-        return recipeProvider.generateSimpleCriterions(recipe, new Item[]{mine, ink, tsaisLaCoqueTransparenteLa, dye});
+        return generateSimpleCriterions(recipe, new Item[]{mine, ink, tsaisLaCoqueTransparenteLa, dye});
     }
 
     private ShapedRecipeJsonBuilder generateStyloRecipeFromMaterials(Item stylo) {
@@ -83,6 +82,6 @@ public class StyloRecipeProvider extends CustomRecipeProvider {
                 .input('#', tsaisLaCoqueTransparenteLa)
                 .input('v', mine);
 
-        return recipeProvider.generateSimpleCriterions(recipe, new Item[]{mine, ink, tsaisLaCoqueTransparenteLa});
+        return generateSimpleCriterions(recipe, new Item[]{mine, ink, tsaisLaCoqueTransparenteLa});
     }
 }

@@ -1,5 +1,6 @@
 package name.modid.entity.custom.bic_crystal_entity;
 
+import name.modid.entity.ModEntities;
 import name.modid.item.ModItems;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -13,7 +14,11 @@ public class BicCrystalNoirEntity extends BicCrystalEntity {
     }
 
     public BicCrystalNoirEntity(LivingEntity livingEntity, World world) {
-        super(livingEntity, world);
+        super(ModEntities.BIC_CRYSTAL_NOIR_ENTITY, livingEntity, world);
+    }
+
+    public BicCrystalNoirEntity(EntityType<? extends ThrownItemEntity> entityType, double d, double e, double f, World world) {
+        super(entityType, d, e, f, world);
     }
 
     @Override
