@@ -19,8 +19,10 @@ public class TutorialMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 		ModItemGroups.registerItemsGroup();
-		 ModDispenserBehaviours.registerDispenserBehaviors();
-
+		ModDispenserBehaviours.registerDispenserBehaviors();
+		LOGGER.debug(ModItems.INKED_ARROW.getTranslationKey());
+		LOGGER.info(ModItems.INKED_ARROW.getTranslationKey());
+		LOGGER.info(ModItems.INKED_ARROW.toString());
 	}
 
 }

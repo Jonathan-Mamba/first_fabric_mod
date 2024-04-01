@@ -1,7 +1,7 @@
 package name.modid.item;
 
 import name.modid.TutorialMod;
-import name.modid.item.custom.BicCrystalProjectileItem;
+import name.modid.item.custom.BicCrystalItem;
 import name.modid.item.custom.InkedArrowItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
@@ -12,11 +12,11 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     private static final FabricItemSettings settings = new FabricItemSettings();
     public static final Item QUATRE_COULEURS_BASE = registerItem("quatre_couleurs_base");
-    public static final Item BIC_CRYSTAL = registerItem("bic_crystal", new BicCrystalProjectileItem("blank"));
-    public static final Item BIC_CRYSTAL_ROUGE = registerItem("bic_crystal_rouge", new BicCrystalProjectileItem("red"));
-    public static final Item BIC_CRYSTAL_VERT = registerItem("bic_crystal_vert", new BicCrystalProjectileItem("green"));
-    public static final Item BIC_CRYSTAL_NOIR = registerItem("bic_crystal_noir", new BicCrystalProjectileItem("black"));
-    public static final Item BIC_CRYSTAL_BLEU = registerItem("bic_crystal_bleu", new BicCrystalProjectileItem("blue"));
+    public static final Item BIC_CRYSTAL = registerItem("bic_crystal", new BicCrystalItem());
+    public static final Item BIC_CRYSTAL_ROUGE = registerItem("bic_crystal_rouge", new BicCrystalItem());
+    public static final Item BIC_CRYSTAL_VERT = registerItem("bic_crystal_vert", new BicCrystalItem());
+    public static final Item BIC_CRYSTAL_NOIR = registerItem("bic_crystal_noir", new BicCrystalItem());
+    public static final Item BIC_CRYSTAL_BLEU = registerItem("bic_crystal_bleu", new BicCrystalItem());
     public static final Item BIC_CRYSTAL_PACK = registerItem("bic_crystal_pack");
     public static final Item INKED_ARROW = registerItem("inked_arrow", new InkedArrowItem(settings));
 

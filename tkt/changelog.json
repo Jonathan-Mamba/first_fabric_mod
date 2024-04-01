@@ -1,0 +1,7 @@
+{
+  "0.2.0": {
+    "global": "added dispenser behaviors for the pens and the inked arrrow",
+    "bugfixes": "pens and inked arrow now show the coorect model (but only in command blocks with inked arrows)",
+    "comment": "c'est chiant d'écrire en anglais"
+  }
+}

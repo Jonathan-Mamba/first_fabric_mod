@@ -2,7 +2,7 @@ package name.modid.util;
 
 import name.modid.entity.custom.InkedArrowEntity;
 import name.modid.item.ModItems;
-import name.modid.item.custom.BicCrystalProjectileItem;
+import name.modid.item.custom.BicCrystalItem;
 import name.modid.misc.entity.BicCrystalEntityFactory;
 import net.minecraft.block.DispenserBlock;
 import net.minecraft.block.dispenser.ProjectileDispenserBehavior;
@@ -15,20 +15,19 @@ import net.minecraft.world.World;
 
 public class ModDispenserBehaviours {
     public static void registerDispenserBehaviors() {
-        registerBicCrystalBehavior((BicCrystalProjectileItem) ModItems.BIC_CRYSTAL);
-        registerBicCrystalBehavior((BicCrystalProjectileItem) ModItems.BIC_CRYSTAL_VERT);
-        registerBicCrystalBehavior((BicCrystalProjectileItem) ModItems.BIC_CRYSTAL_NOIR);
-        registerBicCrystalBehavior((BicCrystalProjectileItem) ModItems.BIC_CRYSTAL_BLEU);
-        registerBicCrystalBehavior((BicCrystalProjectileItem) ModItems.BIC_CRYSTAL_ROUGE);
+        registerBicCrystalBehavior((BicCrystalItem) ModItems.BIC_CRYSTAL);
+        registerBicCrystalBehavior((BicCrystalItem) ModItems.BIC_CRYSTAL_VERT);
+        registerBicCrystalBehavior((BicCrystalItem) ModItems.BIC_CRYSTAL_NOIR);
+        registerBicCrystalBehavior((BicCrystalItem) ModItems.BIC_CRYSTAL_BLEU);
+        registerBicCrystalBehavior((BicCrystalItem) ModItems.BIC_CRYSTAL_ROUGE);
         registerInkedArrowBehavior();
-
     }
 
-    private static void registerBicCrystalBehavior(BicCrystalProjectileItem item) {
+    private static void registerBicCrystalBehavior(BicCrystalItem item) {
         DispenserBlock.registerBehavior(item, new ProjectileDispenserBehavior() {
             @Override
             protected ProjectileEntity createProjectile(World world, Position position, ItemStack stack) {
-                return Util.make(BicCrystalEntityFactory.getEntity(position.getX(), position.getY(), position.getZ(), world, item.getTypeKey()), entity -> entity.setItem(stack));
+                return Util.make(BicCrystalEntityFactory.getEntity(position.getX(), position.getY(), position.getZ(), world, item.toString()), entity -> entity.setItem(stack));
             }
         });
     }
